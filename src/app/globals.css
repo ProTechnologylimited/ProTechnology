@@ -1,0 +1,5 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root { --bg: 10 10 12; --surface: 22 22 27; --line: 42 42 52; --fg: 244 244 246; --muted: 161 161 174; --accent: 124 92 255; }
+body { @apply bg-bg text-fg antialiased; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 2px solid rgb(var(--accent)); outline-offset: 2px; }
+.field { @apply w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm text-fg placeholder:text-muted; }
